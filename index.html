@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- site metas -->
+    <title>Provincijos Mesa</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="Gero dūmo skonis">
+    <meta name="author" content="Laurynas Slomskis">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JavaScript -->
+    <script src="js/all.js"></script>
+    <script src="https://kit.fontawesome.com/c42af263f5.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <!-- 
+        Navigacija
+    -->
+    <section id="section-1">
+            <header>
+                <img src="img\pmlogoMINI.png" alt="Provincijos Mesa">
+
+                <!-- Burger menu-->
+                <a href="#" id="menu-icon" onclick="toggleMenu();">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <!-- Navigation menu -->
+                <nav id="main-menu">
+                    <ul>
+                            <li><a href ="#section-1" class= "active">Namai</a></li>
+                            <li><a href ="#section-2">Apie Mus</a></li>
+                            <li><a href ="#section-3">Produkcija</a></li>
+                            <li><a href ="#section-4">Kur mus rasti</a></li>
+                            <li><a href ="#copyright">Susisiekite</a></li>
+                    </ul><!-- End unordered list-->
+                </nav><!-- End navigation -->
+            </header>
+    </section>
+    
+    <!-- 
+        Landingas 
+    -->
+    <section id="section-2">
+        <div class="container">
+            <div id="main-heading-cta">
+                
+                <h1>Provincijos Mesa</h1>
+                <h2>Gero Dumo Skonis</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt modi non enim labore sit fugiat quaerat ut praesentium nulla.</p>
+                <a href="#section-4" class="btn-big">Kur mus rasti</a>
+            </div><!-- end main heading cta -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+
+    <!-- 
+        produkcijos informacija 
+    -->    
+    <section id="section-3">
+        <div class="container">
+            <div class="title">
+                <h2>Trumpai apie mus</h2>   <!-- Pagrindinis apibudinimas-->
+                <div class="line"></div>    <!-- skirstanti linija -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio nisi adipisci saepe quidem, vero error deleniti sunt pariatur voluptatibus reiciendis ex nemo voluptatem commodi inventore beatae dolorem voluptas dolor.</p>
+            </div>
+
+            <!-- produkcijos eilute -->
+            <div class="blurb-row">
+
+                <!-- produkcija 1-->
+                <div class="blurb">
+                    <img src="img\placeholderSQUARE.png" alt="rukyta desra">
+                    <h3>Rukyta Desra</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, voluptatum?</p>
+                </div>
+
+                <!-- produkcija 2-->
+                <div class="blurb">
+                    <img src="img\placeholderSQUARE.png" alt="rukytas kumpis">
+                    <h3>Rukytas Kumpis</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, voluptatum?</p>
+                </div>
+
+                <!-- produkcija 3-->
+                <div class="blurb">
+                    <img src="img\placeholderSQUARE.png" alt="dar kazkas">
+                    <h3>Pavyzdys</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, voluptatum?</p>
+                </div>
+
+                <!-- produkcija 4 -->
+                <div class="blurb">
+                    <img src="img\placeholderSQUARE.png" alt="dar kazkas">
+                    <h3>Pavyzdys</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, voluptatum?</p>
+                </div>
+
+            </div> <!-- end blurb row -->
+        </div> <!-- end container -->
+    </section> <!-- end produkcijos informacija -->
+
+    <!-- 
+        Google Maps
+     -->
+    <section id="section-4">
+        <div class="container"> <!-- main container -->
+
+            <div class="title">
+                <h2>Kur mus rasti</h2>
+                <div class="line"></div>    <!-- skirstanti linija -->
+            </div>
+            
+
+            <div class="map-row"> <!-- maps bendras -->
+
+                <div class="map">
+                    <div class="iframe-rwd">
+                        <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1194.9210823825463!2d23.194096266570018!3d54.601785869908376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e12dcbf0bc3495%3A0x59ccba1ab243d55d!2sE28%2035%2C%20Gi%C5%BEai%2070318%2C%20Lithuania!5e0!3m2!1sen!2sie!4v1568920648008!5m2!1sen!2sie" ></iframe>
+                    </div>
+                        <a href="https://www.google.com/maps/dir//E28+35,+Gi%C5%BEai+70318,+Lithuania/@54.601802,23.1907647,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46e12dcbf0bc3495:0x59ccba1ab243d55d!2m2!1d23.1951421!2d54.6018021" class="btn-small" target="_blank">Vykti</a>
+                </div>
+
+                <div class="map">
+                    <div class="iframe-rwd">
+                        <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74064.89513227374!2d23.273164838575372!3d54.54181772213954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e0d186b069aae3%3A0x71b3f20f19b0c9a7!2sMarijampol%C4%97%2C%20Lithuania!5e0!3m2!1sen!2sie!4v1568922662029!5m2!1sen!2sie"></iframe>
+                    </div>
+                        <a href="https://www.google.com/maps/dir//Marijampol%C4%97,+Lithuania/@54.5553727,23.2925755,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46e0d186b069aae3:0x71b3f20f19b0c9a7!2m2!1d23.3626146!2d54.5553929" class="btn-small" target="_blank">Vykti</a>
+                </div>
+
+            </div><!-- end maps bendras -->
+        </div><!-- end container -->
+    </section>
+
+    <!--
+        Europos sajungos projekto aprasymas
+    -->
+    <section id="section-5">
+        <div class="container">
+            <div class="es-project"> <!-- es projekto bendras -->
+                <div id="es-text"> <!-- es projekto tekstas -->
+                    <h3><span class="bold">UAB „Provincijos Mėsa“</span> įgyvendina iš dalies Europos sąjungos struktūrinių fondų lėšomis finansuojamą projektą <br> <span class="bold">„INOVATYVIŲ ĮRENGINIŲ DIEGIMAS UAB ,,Provincijos mėsa““</span> </h3>
+											<p>Projekto tikslas: įmonės gamybinių pajėgumų didinimas įsigyjant našią įrangą. </p>
+											<p>Projekto veiklos: naujų inovatyvių įrenginių įsigijimas ir įdiegimas. </p>
+											<p><span class="bold">UAB „Provincijos mėsa“</span> yra mėsos perdirbėja kuri nuo pat veiklos pradžios stengiasi gaminti pačios aukščiausios kokybės tradicinius šaltai rūkytus, sūdytus, vytintus ir kitus kiaulienos gaminius. </p>
+											<p>Įmonė atliko vidinę analizę, po kurios buvo nuspręsta įsigyti naujų įrengimų, tokiu būdu išplečiant gaminių asortimentą ir padidinant našumą. </p>
+											<p>Šis projektas vykdomas pagal 2014-2020 m. Europos Sąjungos fondu investicijų veiksmų programos 3 prioriteto „Smulkiojo ir vidutinio verslo konkurencingumo skatinimas“ priemonę Nr. 03.3.1-LVPA-K-850 <span class="bold">„Regio potencialas LT“</span>. </p>
+											<p>Priemonės tikslas: paskatinti mažas ir vidutines įmones ( MVĮ) skirti lėšų darbo efektyvumui ir įmonės pajėgumui pakelti. </p>
+										
+											<span class="grey">
+											<p>Projekto biudžetas: 75 400,00 Eur; </p>
+											<p>Projekto finansavimas: 49 010,00 Eur. </p>
+											<p>Planuojama projekto veiklų pabaiga: 2020 metai. </p>
+                                            </span>
+                                            <!--
+                                                span bold: bold style in css
+                                                span grey: grey style in css
+                                            -->
+                </div><!-- end projekto tekstas-->
+                <div id="es-img">
+                    <img src="img\eslogoMINI.png" alt="ES projekto logotipas">
+                </div>
+            </div> <!-- end es projekto bendras-->
+        </div> <!-- end container -->
+    </section>
+
+    <!--
+        Footeris
+    -->
+    <footer>
+        <div class="container">
+            <!-- footer bendras -->
+            <div class="footer-row">
+                
+                <!-- footer kur rasti produkcija -->
+                <div id="footer-a">
+                    <h3>Kur rasti musu produkcija</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sequi.</p>
+                </div> <!-- end footer a -->
+
+                <!-- footer kaip susisiekti -->
+                <div id="footer-b">
+                    <h3>Susisiekite</h3>
+                    <!-- sukurti icon klase per css ir idiegti -->
+                    <p>
+                        <i class="icon"></i>
+                        <span>E28 35, Gižai 70318</span>
+                    </p>
+
+                    <p>
+                        <i class="icon"></i>
+                        <span>+370 622 16595</span>
+                    </p>
+
+                    <p>
+                        <i class="icon"></i>
+                        <span><a href="#">susisiekimo@elpastas.lt</a></span>
+                    </p>
+                </div> <!-- end footer b-->
+
+                <!-- footer darbo valandos -->
+                <div id="footer-c">
+                    <h3>Darbo valandos</h3>
+                    <ul>
+                        <li>
+                            <p>I - V </p>
+                            <span> 08:00 - 19:00</span>
+                        </li>
+                        <li>
+                            <p>VI </p>
+                            <span>  08:00 - 15:00</span>
+                        </li>
+                        <li>
+                            <p>VII</p>
+                            <span>09:00 - 15:00</span>
+                        </li> <!-- end li -->
+                    </ul> <!-- end ul -->
+                </div> <!-- end footer c -->
+            </div> <!-- end footer row -->
+         </div> <!-- end container -->
+
+         <!-- copyright text -->
+         <div id="copyright">
+             <div class="container">
+                 <div class="row">
+                     <h6>Autorinė teisė &copy; 2019 Provincijos Mėsa</h6>
+                 </div> <!-- end row -->
+             </div> <!-- end container -->
+         </div> <!-- end copyright -->
+
+    </footer> <!-- end footer -->
+
+
+
+    
+
+</body> <!-- end body -->
+</html> <!-- end html -->
