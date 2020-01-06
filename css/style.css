@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+/* Imported Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Core styles */
+
+body{
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6E6;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 0;
+    position: relative;
+    color: #1f1f1f;
+}
+
+h1{ font-size:  1.7em; margin-top: 0;}
+h2{ font-size:  1.5em; margin-top: 0;}
+h3{ font-size:  1.4em; margin-top: 0;}
+h4{ font-size:  1.3em; }
+h5{ font-size:  1.2em; }
+h6{ font-size:  1.1em; margin: 0;}
+
+ul,ol,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+html, body{ height: 100%;}
+*/
+
+
+/*
+ Header and Nav
+ */
+header{
+    padding: 1.2em 0.8em 1em 0.8em;
+    background-color: #202020;
+}
+header img{
+    max-width: 35%;
+    margin: 0 0 0 1em;  /* TOP RIGHT LEFT BOTTOM*/
+}
+
+/* Burger menu icon */
+#menu-icon{
+    display: block;
+    color: #ffffff;
+    font-size: 2em;
+    float: right;
+    margin: 0.7em 0.5em 0 0;    /* TOP RIGHT LEFT BOTTOM*/
+}
+
+#main-menu{
+    width: 100%;
+    display: none;
+    border-bottom: 1px solid #ffffff;
+}
+#main-menu ul{
+    margin: 0.5em 0 0.5em 2em;
+}
+#main-menu ul li{
+    display: block;
+
+}
+#main-menu a{
+    color: #ffffff;
+}
+
+
+/* 
+LANDINGAS
+*/
+
+#main-heading-cta{
+    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+#main-heading-cta h1{
+    color: #ffffff;
+    max-width: 90%;
+    margin: 1em auto 0.5em auto;
+    font-size: 3em;
+    line-height: 1.4em;
+}
+#main-heading-cta h2{
+    color: #ffffff;
+    max-width: 90%;
+    margin: 1em auto;
+    font-size: 2em;
+}
+#main-heading-cta p{
+    color: #ffffff;
+    max-width: 87%;
+    margin: 1.2em auto;
+    font-variant: small-caps;
+    text-justify: distribute;
+}
+.btn-big{
+    background-color: #e75b1e;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 2em;
+    display: inline-block;
+    max-width: 90%;
+    padding: 1em 4em;
+    border-radius: 1em;
+}
+
+/* 
+PRODUKCIJOS INFORMACIJA
+*/
+
+.title h2{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.title .line{
+    width: 30%;
+    height: 0.3em;
+    background-color: rgba(0, 0, 0, 0.20);
+    margin: 0 auto;
+    border-radius: 0.4em;
+}
+
+.title p{
+    max-width: 90%;
+    margin: 1em auto;
+    text-align: left;
+}
+
+.blurb-row{
+    display: inline-table;
+}
+
+.blurb{
+    display: inline-block;
+    text-align: center;
+    margin: 1em auto 2em auto;
+    padding: 1em 0 0 0 ;
+}
+
+.blurb img{
+    max-width: 85%;
+}
+
+/* 
+GOOGLE MAPS
+*/
+
+.map-row{
+    padding-bottom: 2em;
+}
+
+.map{
+    text-align: center;
+    padding: 1em 0 2em 0;
+}
+
+#gmap{
+    margin-bottom: 1.8em;
+}
+
+.btn-small {
+    background-color: #e75b1e;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 1em  7em;
+    border-radius: 0.5em;
+}
+
+
+/*
+ES PROJEKTAS
+*/
+
+#es-text {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#es-text p{
+    line-height: 1.2em;
+}
+
+.bold{
+    font-weight: bold;
+}
+.grey{
+    color: grey;
+}
+
+#es-img {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#es-img img{
+    max-width: 100%;
+}
+
+/*
+FOOTERIS
+*/
+
+.footer-row{
+    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #ffffff;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+footer h3{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    color: #ffffff;
+}
+
+footer p{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2em;
+}
+
+footer ul{
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2em;
+}
+
+
+/*
+COPYRIGHT
+*/
+
+#copyright .container{
+    background-color: #202020;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    text-align: center;
+}
+
+#copyright h6{
+    color: #ffffff;
+    font-variant: small-caps;
+}
