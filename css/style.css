@@ -44,20 +44,20 @@ ul,ol,li{
     margin-right: auto;
 }
 
-/*
-html, body{ height: 100%;}
-*/
+
+
 
 
 /*
  Header and Nav
  */
+
 header{
     padding: 1.2em 0.8em 1em 0.8em;
     background-color: #202020;
 }
 header img{
-    max-width: 35%;
+    max-width: 10em;
     margin: 0 0 0 1em;  /* TOP RIGHT LEFT BOTTOM*/
 }
 
@@ -65,25 +65,42 @@ header img{
 #menu-icon{
     display: block;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 2.5em;
     float: right;
-    margin: 0.7em 0.5em 0 0;    /* TOP RIGHT LEFT BOTTOM*/
+    margin: 0.8em 0.5em 0 0;    /* TOP RIGHT LEFT BOTTOM*/
 }
 
 #main-menu{
     width: 100%;
     display: none;
-    border-bottom: 1px solid #ffffff;
+    background-color: #303030;
+    position: absolute;
+    z-index: 1;
 }
 #main-menu ul{
-    margin: 0.5em 0 0.5em 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
 }
 #main-menu ul li{
     display: block;
-
+    font-variant: small-caps;
+    margin: 0.4em;
+    padding: 1em;
+    border-radius: 2em;
 }
 #main-menu a{
     color: #ffffff;
+}
+
+#main-menu li:hover{
+    background-color: #202020;
+    opacity: 0.8;
+    border-radius: 1em;
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 
@@ -129,16 +146,21 @@ LANDINGAS
     display: inline-block;
     max-width: 90%;
     padding: 1em 4em;
-    border-radius: 1em;
+    border-radius: 2em;
 }
 
+.btn-big:hover{
+    background-color: #e44e0d;
+    border-radius: 1em;
+    transition-duration: 0.3s;
+}
 /* 
 PRODUKCIJOS INFORMACIJA
 */
 
 .title h2{
     text-align: center;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 .title .line{
@@ -151,7 +173,7 @@ PRODUKCIJOS INFORMACIJA
 
 .title p{
     max-width: 90%;
-    margin: 1em auto;
+    margin: 2em auto 1em auto;
     text-align: left;
 }
 
@@ -165,6 +187,9 @@ PRODUKCIJOS INFORMACIJA
     margin: 1em auto 2em auto;
     padding: 1em 0 0 0 ;
 }
+.blurb h3{
+    margin-top: 1em;
+}
 
 .blurb img{
     max-width: 85%;
@@ -173,9 +198,11 @@ PRODUKCIJOS INFORMACIJA
 /* 
 GOOGLE MAPS
 */
-
+#section-4 h2{
+    padding-top: 1em;
+}
 .map-row{
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 }
 
 .map{
@@ -185,6 +212,7 @@ GOOGLE MAPS
 
 #gmap{
     margin-bottom: 1.8em;
+    width: 95%;
 }
 
 .btn-small {
@@ -192,10 +220,16 @@ GOOGLE MAPS
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bolder;
-    padding: 1em  7em;
-    border-radius: 0.5em;
+    padding: 1em  5em;
+    border-radius: 2em;
 }
 
+.btn-small:hover{
+    background-color: #e44e0d;
+    border-radius: 1em;
+    padding: 1em 7em;
+    transition-duration: 0.3s;
+}
 
 /*
 ES PROJEKTAS
@@ -242,25 +276,37 @@ FOOTERIS
 }
 
 footer h3{
-    max-width: 95%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1em;
     color: #ffffff;
+    text-align: center;
 }
 
 footer p{
-    max-width: 95%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.2em;
+    line-height: 1.2em; 
 }
 
 footer ul{
-    max-width: 95%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2em;
+    text-align: center;
+}
+
+#footer-a p{
+    max-width: 70%;
+}
+
+#footer-b{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -270,12 +316,23 @@ COPYRIGHT
 
 #copyright .container{
     background-color: #202020;
-    padding-top: 1.4em;
-    padding-bottom: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
+    max-width: none;
 }
 
 #copyright h6{
     color: #ffffff;
+    font-weight: 100;
+    font-size: small;
     font-variant: small-caps;
+}
+
+
+/* Media Queries */
+@media screen and(min-width: 610px){
+    #main-heading-cta h1{
+        font-size: 5em;
+    }
 }
