@@ -6,7 +6,7 @@
 /* Core styles */
 
 body{
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
     margin: 0;
@@ -112,7 +112,7 @@ LANDINGAS
     background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     text-align: center;
     padding: 1em 0 1em 0;
 }
@@ -145,7 +145,7 @@ LANDINGAS
     margin: 2em;
     display: inline-block;
     max-width: 90%;
-    padding: 1em 4em;
+    padding: 1em 3em;
     border-radius: 2em;
 }
 
@@ -153,6 +153,8 @@ LANDINGAS
     background-color: #e44e0d;
     border-radius: 1em;
     transition-duration: 0.3s;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 /* 
 PRODUKCIJOS INFORMACIJA
@@ -182,10 +184,10 @@ PRODUKCIJOS INFORMACIJA
 }
 
 .blurb{
-    display: inline-block;
+    max-width: 90%;
     text-align: center;
     margin: 1em auto 2em auto;
-    padding: 1em 0 0 0 ;
+    padding-top: 1em;
 }
 .blurb h3{
     margin-top: 1em;
@@ -198,11 +200,20 @@ PRODUKCIJOS INFORMACIJA
 /* 
 GOOGLE MAPS
 */
+#section-4 .container{
+    background-color: #505050;
+    
+}
 #section-4 h2{
-    padding-top: 1em;
+    padding-top: 2em;
+    color: #ffffff;
+}
+
+#section-4 .line{
+    background-color: rgba(322, 322, 322, 0.20);
 }
 .map-row{
-    padding-bottom: 4em;
+    padding-bottom: 1em;
 }
 
 .map{
@@ -212,7 +223,9 @@ GOOGLE MAPS
 
 #gmap{
     margin-bottom: 1.8em;
+    border: 0;    
     width: 95%;
+    height: 18em;
 }
 
 .btn-small {
@@ -239,6 +252,7 @@ ES PROJEKTAS
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 3em;
 }
 
 #es-text p{
@@ -267,27 +281,27 @@ FOOTERIS
 
 .footer-row{
     background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
     color: #ffffff;
-    padding-bottom: 2em;
-    padding-top: 1em;
+    padding-bottom: 1.6em;
+    padding-top: 2.6em;
 }
 
 footer h3{
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1em;
     color: #ffffff;
     text-align: center;
 }
 
 footer p{
-    max-width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: em;
     line-height: 1.2em; 
 }
 
@@ -299,14 +313,18 @@ footer ul{
     text-align: center;
 }
 
-#footer-a p{
-    max-width: 70%;
-}
-
 #footer-b{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#footer-b h3{
+    margin-top: 2em;
+}
+
+#footer-c h3{
+    margin-top: 2em;
 }
 
 
@@ -331,8 +349,87 @@ COPYRIGHT
 
 
 /* Media Queries */
-@media screen and(min-width: 610px){
+@media screen and (min-width: 530px){
+    /* Landing */
+    #main-heading-cta{
+        padding: 1.4em 0 1.4em 0;
+    }
     #main-heading-cta h1{
-        font-size: 5em;
+        font-size: 3.4em;
+        margin-top: 3em;
+    }
+    #main-heading-cta h2{
+        font-size: 2.4em;
+    }
+    #main-heading-cta p{
+        font-size: 1.4em;
+        margin-top: 5em;
+        margin-bottom: 3em;
+    }
+    .btn-big{
+        font-size: 1.4em;
+    }
+
+    /* Product info */
+    .title h2{
+        font-size: 2.4em;
+    }
+
+    .title .line{
+        width: 45%;
+        height: 0.5em;
+        margin: 2em auto;
+    }
+
+    .title p{
+        font-size: 1.2em;
+    }
+
+    .blurb{
+        margin: 1.4em auto 2.4em auto;
+        padding-top: 1.4em;
+    }
+
+    .blurb p{
+        max-width: 80%;
+        font-size: 1.2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Google maps */
+    #section-4 .line{
+        width: 45%;
+        height: 0.5em;
+        margin: 2em auto;
+    }
+
+    #gmap{
+        width: 90%;
+        height: 20em;
+    }
+
+    /* EU project */
+    #es-text{
+        max-width: 90%;
+        padding-top: 4em;
+    }
+
+    #es-text h3{
+        font-size: 1.8em;
+        line-height: 1.2em;
+    }
+
+    #es-text p{
+        font-size: 1.2em;
+    }
+
+    #es-img{
+        padding-top: 1em;
+    }
+
+    /* Footer */
+    .footer-row{
+        display: inline-block;
     }
 }
