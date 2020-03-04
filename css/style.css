@@ -153,8 +153,8 @@ LANDINGAS
     background-color: #e44e0d;
     border-radius: 1em;
     transition-duration: 0.3s;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 /* 
 PRODUKCIJOS INFORMACIJA
@@ -287,6 +287,8 @@ FOOTERIS
     color: #ffffff;
     padding-bottom: 1.6em;
     padding-top: 2.6em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer h3{
@@ -294,7 +296,6 @@ footer h3{
     margin-left: auto;
     margin-right: auto;
     color: #ffffff;
-    text-align: center;
 }
 
 footer p{
@@ -310,21 +311,26 @@ footer ul{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.2em;
-    text-align: center;
 }
 
 #footer-b{
-    width: 80%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2.2em;
+    padding-right: 2.2em;
 }
 
 #footer-b h3{
     margin-top: 2em;
 }
 
+#footer-c{
+    text-align: center;
+}
 #footer-c h3{
     margin-top: 2em;
+    max-width: 100%;
 }
 
 
@@ -347,6 +353,11 @@ COPYRIGHT
     font-variant: small-caps;
 }
 
+@media screen and (min-width: 400px){
+    #footer-b h3, #footer-b p{
+        max-width: 70%;
+    }
+}
 
 /* Media Queries */
 @media screen and (min-width: 530px){
@@ -426,10 +437,27 @@ COPYRIGHT
 
     #es-img{
         padding-top: 1em;
+    }    
+
+     /* Footer */
+     .footer-row{
+         padding-left: 1em;
+         padding-right: 1em;
+     }
+     #footer-b, #footer-c{
+        display: inline-table;
+        max-width: 100%;
     }
 
-    /* Footer */
-    .footer-row{
-        display: inline-block;
+    #footer-c{
+        float: right;
+    }
+
+    #footer-b h3, #footer-b p{
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: 670px){
+
     }
 }
