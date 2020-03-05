@@ -180,7 +180,6 @@ PRODUKCIJOS INFORMACIJA
 }
 
 .blurb-row{
-    display: inline-table;
 }
 
 .blurb{
@@ -327,6 +326,11 @@ footer ul{
 
 #footer-c{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.2em;
+    padding-right: 2.2em;
+    
 }
 #footer-c h3{
     margin-top: 2em;
@@ -354,6 +358,16 @@ COPYRIGHT
 }
 
 @media screen and (min-width: 400px){
+
+    /* HEADER*/
+    header img{
+        max-width: 8em;
+    }
+    #menu-icon{
+        margin-top: 0.6em;
+    }
+    
+    /* FOOTER */
     #footer-b h3, #footer-b p{
         max-width: 70%;
     }
@@ -447,6 +461,8 @@ COPYRIGHT
      #footer-b, #footer-c{
         display: inline-table;
         max-width: 100%;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
     }
 
     #footer-c{
@@ -457,7 +473,37 @@ COPYRIGHT
         max-width: 100%;
     }
 
-    @media screen and (min-width: 670px){
+    @media screen and (min-width: 676px){
 
+        /* Product info */
+
+        .blurb{
+            max-width: 45%;
+            display: inline-table;
+            margin-left: 0.8em;
+            margin-right: 0.8em;
+        }
+
+        #blurb2, #blurb4{
+            float: right;
+        }
+
+        .blurb-row{
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        /* GMAPS */
+        .map-row{
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        .map{
+            width: 48%;
+            display: inline-table;
+        }
+        #map2{
+            float: right;
+        }
     }
 }
