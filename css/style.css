@@ -71,6 +71,7 @@ header img{
 }
 
 #main-menu{
+    margin-left: -1em;
     width: 100%;
     display: none;
     background-color: #303030;
@@ -80,19 +81,15 @@ header img{
 #main-menu ul{
     margin-right: 1em;
     margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1em;
     max-width: 95%;
 }
-#main-menu ul li{
+#main-menu a{
     display: block;
     font-variant: small-caps;
     margin: 0.4em;
     padding: 1em;
     border-radius: 2em;
-}
-#main-menu a{
-    color: #ffffff;
 }
 
 #main-menu li:hover{
@@ -102,6 +99,7 @@ header img{
     transition-duration: 0.2s;
     cursor: pointer;
 }
+
 
 
 /* 
@@ -177,9 +175,6 @@ PRODUKCIJOS INFORMACIJA
     max-width: 90%;
     margin: 2em auto 1em auto;
     text-align: left;
-}
-
-.blurb-row{
 }
 
 .blurb{
@@ -475,6 +470,7 @@ COPYRIGHT
 
     @media screen and (min-width: 676px){
 
+        
         /* Product info */
 
         .blurb{
@@ -504,6 +500,27 @@ COPYRIGHT
         }
         #map2{
             float: right;
+        }
+    }
+
+    @media screen and (min-width: 800px){
+        /* Navmenu*/
+        #menu-icon{
+            display: none !important;
+        }
+        #main-menu{
+            display: inline-block !important;
+            background-color: #202020;
+        }
+        #main-menu li:hover{
+            background-color: #303030;
+        }
+        #main-menu ul li{
+            padding-left: auto;
+            padding-right: auto;
+            margin-top: 1em;
+            max-width: 20%;
+            display: inline-block;
         }
     }
 }
