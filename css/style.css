@@ -90,6 +90,7 @@ header img{
     margin: 0.4em;
     padding: 1em;
     border-radius: 2em;
+    text-align: center;
 }
 
 #main-menu li:hover{
@@ -470,6 +471,10 @@ COPYRIGHT
 
     @media screen and (min-width: 676px){
 
+        /* Header */
+        #main-menu a{
+            text-align: right;
+        }
         
         /* Product info */
 
@@ -505,12 +510,21 @@ COPYRIGHT
 
     @media screen and (min-width: 800px){
         /* Navmenu*/
+        header img{
+            z-index: 2;
+        }
         #menu-icon{
             display: none !important;
         }
         #main-menu{
             display: inline-block !important;
             background-color: #202020;
+            width: 80%;
+            margin-left: 0;
+            text-align: right;
+        }
+        #main-menu a{
+            padding: 0.4em;
         }
         #main-menu li:hover{
             background-color: #303030;
@@ -518,9 +532,13 @@ COPYRIGHT
         #main-menu ul li{
             padding-left: auto;
             padding-right: auto;
-            margin-top: 1em;
-            max-width: 20%;
+            margin-top: 1.2em;
+            max-width: 25%;
             display: inline-block;
         }
+    }
+
+    @media screen and (min-width: 1140px) {
+        
     }
 }
