@@ -12,6 +12,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #E6E6E6;
+    box-sizing: border-box;
 }
 
 a{
@@ -44,61 +45,76 @@ ul,ol,li{
     margin-right: auto;
 }
 
-
-
-
-
 /*
  Header and Nav
  */
 
 header{
-    padding: 1.2em 0.8em 1em 0.8em;
     background-color: #202020;
-}
-header img{
-    max-width: 10em;
-    margin: 0 0 0 1em;  /* TOP RIGHT LEFT BOTTOM*/
-}
-
-/* Burger menu icon */
-#menu-icon{
-    display: block;
-    color: #ffffff;
-    font-size: 2.5em;
-    float: right;
-    margin: 0.8em 0.5em 0 0;    /* TOP RIGHT LEFT BOTTOM*/
-}
-
-#main-menu{
-    margin-left: -1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
     width: 100%;
-    display: none;
-    background-color: #303030;
-    position: absolute;
+    z-index: 2;
+}
+
+.logo{
+    overflow: hidden;
+    position: relative;
+}
+.logo img{
+    margin: 1.5em 0 1.5em 0;
+}
+
+.overlay{
+    height: 100%;
+    width: 0%;
+    position: fixed;
     z-index: 1;
+    right: 0;
+    top: 0;
+    background-color:   rgba(32, 32, 32, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
-#main-menu ul{
-    margin-right: 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    max-width: 95%;
+#closenav a{
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    font-size: 2em;
 }
-#main-menu a{
-    display: block;
-    font-variant: small-caps;
-    margin: 0.4em;
-    padding: 1em;
-    border-radius: 2em;
+.nav-links{
+    position: relative;
+    top: 20%;
+    width: 100%;
     text-align: center;
 }
 
-#main-menu li:hover{
-    background-color: #202020;
-    opacity: 0.8;
-    border-radius: 1em;
-    transition-duration: 0.2s;
-    cursor: pointer;
+.nav-links a{
+    display: block;
+    font-size: 2em;
+    line-height: 1.2em;
+    padding: 1em 0 1em 0;
+}
+
+.nav-links a:hover,
+.nav-links a:focus{
+    background-color: #505050;
+    transition-duration: 0.3s;
+}
+
+.nav-links .line{
+    width: 97%;
+    height: 0.2em;
+    background-color: rgba(12, 12, 12, 0.2);
+    margin: 0 auto;
+    border-radius: 5em;
+}
+
+#burger{
+    display: flex;
+    font-size: 2em;
 }
 
 
@@ -106,14 +122,13 @@ header img{
 /* 
 LANDINGAS
 */
-
 #main-heading-cta{
     background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 1em 0 1em 0;
+    padding: 8em 0 2em 0;
 }
 
 #main-heading-cta h1{
@@ -178,19 +193,7 @@ PRODUKCIJOS INFORMACIJA
     text-align: left;
 }
 
-.blurb{
-    max-width: 90%;
-    text-align: center;
-    margin: 1em auto 2em auto;
-    padding-top: 1em;
-}
-.blurb h3{
-    margin-top: 1em;
-}
-
-.blurb img{
-    max-width: 85%;
-}
+/* IMAGE SLIDESHOW */
 
 /* 
 GOOGLE MAPS
@@ -356,12 +359,6 @@ COPYRIGHT
 @media screen and (min-width: 400px){
 
     /* HEADER*/
-    header img{
-        max-width: 8em;
-    }
-    #menu-icon{
-        margin-top: 0.6em;
-    }
     
     /* FOOTER */
     #footer-b h3, #footer-b p{
@@ -392,31 +389,6 @@ COPYRIGHT
     }
 
     /* Product info */
-    .title h2{
-        font-size: 2.4em;
-    }
-
-    .title .line{
-        width: 45%;
-        height: 0.5em;
-        margin: 2em auto;
-    }
-
-    .title p{
-        font-size: 1.2em;
-    }
-
-    .blurb{
-        margin: 1.4em auto 2.4em auto;
-        padding-top: 1.4em;
-    }
-
-    .blurb p{
-        max-width: 80%;
-        font-size: 1.2em;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     /* Google maps */
     #section-4 .line{
@@ -472,27 +444,8 @@ COPYRIGHT
     @media screen and (min-width: 676px){
 
         /* Header */
-        #main-menu a{
-            text-align: right;
-        }
         
         /* Product info */
-
-        .blurb{
-            max-width: 45%;
-            display: inline-table;
-            margin-left: 0.8em;
-            margin-right: 0.8em;
-        }
-
-        #blurb2, #blurb4{
-            float: right;
-        }
-
-        .blurb-row{
-            padding-left: 1em;
-            padding-right: 1em;
-        }
 
         /* GMAPS */
         .map-row{
@@ -509,33 +462,7 @@ COPYRIGHT
     }
 
     @media screen and (min-width: 800px){
-        /* Navmenu*/
-        header img{
-            z-index: 2;
-        }
-        #menu-icon{
-            display: none !important;
-        }
-        #main-menu{
-            display: inline-block !important;
-            background-color: #202020;
-            width: 80%;
-            margin-left: 0;
-            text-align: right;
-        }
-        #main-menu a{
-            padding: 0.4em;
-        }
-        #main-menu li:hover{
-            background-color: #303030;
-        }
-        #main-menu ul li{
-            padding-left: auto;
-            padding-right: auto;
-            margin-top: 1.2em;
-            max-width: 25%;
-            display: inline-block;
-        }
+        
     }
 
     @media screen and (min-width: 1140px) {

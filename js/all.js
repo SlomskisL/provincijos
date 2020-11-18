@@ -1,11 +1,11 @@
+// Functions to open/close navigation menu
+function openNav(){
+    document.getElementById("nav").style.width = "100%";
+}
 
-/* Hamburger Menu Script */
-    function toggleMenu(){
-        var x = document.getElementById("main-menu");
-        if(x.style.display === "block"){
-            x.style.display = "none";
-        }
-        else{
-            x.style.display = "block";
-        }
-    }
+function closeNav(){
+    document.getElementById("nav").style.width = "0%";
+}
+
+
+// Make navbar stay on top of site
