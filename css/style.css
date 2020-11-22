@@ -4,8 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Core styles */
-
-body{
+body, html{
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5em;
@@ -13,6 +12,8 @@ body{
     padding: 0;
     background-color: #E6E6E6;
     box-sizing: border-box;
+    position: auto;
+    scroll-behavior:smooth; 
 }
 
 a{
@@ -40,7 +41,6 @@ ul,ol,li{
 }
 
 .container{
-    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -58,6 +58,11 @@ header{
     width: 100%;
     z-index: 2;
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .logo{
     overflow: hidden;
@@ -74,9 +79,9 @@ header{
     z-index: 1;
     right: 0;
     top: 0;
-    background-color:   rgba(32, 32, 32, 0.97);
+    background-color:   rgba(32, 32, 32 , 0.97);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 #closenav a{
     position: absolute;
@@ -101,7 +106,7 @@ header{
 .nav-links a:hover,
 .nav-links a:focus{
     background-color: #505050;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 .nav-links .line{
