@@ -225,10 +225,10 @@ GOOGLE MAPS
 }
 
 #gmap{
-    margin-bottom: 1.8em;
     border: 0;    
     width: 95%;
-    height: 18em;
+    height: 20em;
+    margin: 2em auto 2em auto;
 }
 
 .btn-small {
@@ -295,52 +295,32 @@ FOOTERIS
 }
 
 footer h3{
-    max-width: 90%;
-    margin-left: auto;
     margin-right: auto;
     color: #ffffff;
+    margin-top: 2em;
 }
 
-footer p{
+
+footer ul{
+    line-height: 1.2em;
+}
+
+#footer-a{
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: em;
-    line-height: 1.2em; 
-}
-
-footer ul{
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.2em;
 }
 
 #footer-b{
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2.2em;
-    padding-right: 2.2em;
 }
-
-#footer-b h3{
-    margin-top: 2em;
-}
-
 #footer-c{
-    text-align: center;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2.2em;
-    padding-right: 2.2em;
-    
 }
-#footer-c h3{
-    margin-top: 2em;
-    max-width: 100%;
-}
-
 
 /*
 COPYRIGHT
@@ -361,18 +341,19 @@ COPYRIGHT
     font-variant: small-caps;
 }
 
-@media screen and (min-width: 400px){
-
-    /* HEADER*/
-    
-    /* FOOTER */
-    #footer-b h3, #footer-b p{
-        max-width: 70%;
-    }
-}
 
 /* Media Queries */
 @media screen and (min-width: 530px){
+    /* navbar */
+    header{
+        justify-content: space-between;
+    }
+    .logo{
+        margin-left: 3em;
+    }
+    #burger{
+        margin-right: 1.2em;
+    }
     /* Landing */
     #main-heading-cta{
         padding: 1.4em 0 1.4em 0;
@@ -399,7 +380,6 @@ COPYRIGHT
     #section-4 .line{
         width: 45%;
         height: 0.5em;
-        margin: 2em auto;
     }
 
     #gmap{
@@ -449,25 +429,53 @@ COPYRIGHT
     @media screen and (min-width: 676px){
 
         /* Header */
-        
+        .logo{
+            padding-right: 9em;
+            float: left;
+        }
+        .overlay{
+            width: 100% !important;
+            height: auto;
+            background-color: transparent;
+            position: relative;
+            margin-left: auto;
+            overflow-x: auto;
+        }
+        .nav-links{
+            display: inline-flex;
+            float: right;
+        }
+        .nav-links li{
+            padding: 0.2em;
+            display: inline;
+        }
+        .nav-links a{
+            font-size: 0.9em;
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+            font-variant: small-caps;
+            letter-spacing: 0.03em;
+        }
+
+        #burger, #closenav, .nav-links .line{
+            display: none;
+        }
         /* Product info */
 
         /* GMAPS */
-        .map-row{
-            padding-left: 1em;
-            padding-right: 1em;
-        }
         .map{
-            width: 48%;
-            display: inline-table;
-        }
-        #map2{
-            float: right;
+            max-width: 80%;
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 
     @media screen and (min-width: 800px){
-        
+        /* footer */
+        #footer-a, #footer-b, #footer-c{
+            display: inline-table;
+            max-width: 40%;
+        }
     }
 
     @media screen and (min-width: 1140px) {

@@ -23,6 +23,7 @@ function stickyMenu(){
       }
 }
 
+// Disable background scrolling when navmenu is open (gimped by scroll-behavior: smooth)
 function disableScrolling(){
   var x=window.scrollX;
   var y=window.scrollY;
