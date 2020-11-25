@@ -73,6 +73,7 @@ header{
 }
 
 .overlay{
+    display: flex;
     height: 100%;
     width: 0%;
     position: fixed;
@@ -124,9 +125,7 @@ header{
 
 
 
-/* 
-LANDINGAS
-*/
+/* LANDING */
 #main-heading-cta{
     background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
     background-position: center;
@@ -175,10 +174,8 @@ LANDINGAS
     padding-left: 4em;
     padding-right: 4em;
 }
-/* 
-PRODUKCIJOS INFORMACIJA
-*/
 
+/* PRODUCT INFO */
 .title h2{
     text-align: center;
     padding-top: 2em;
@@ -200,9 +197,7 @@ PRODUKCIJOS INFORMACIJA
 
 /* IMAGE SLIDESHOW */
 
-/* 
-GOOGLE MAPS
-*/
+/* GOOGLE MAPS */
 #section-4 .container{
     background-color: #505050;
     
@@ -247,10 +242,7 @@ GOOGLE MAPS
     transition-duration: 0.3s;
 }
 
-/*
-ES PROJEKTAS
-*/
-
+/* EU PROJECT */
 #es-text {
     max-width: 95%;
     margin-left: auto;
@@ -278,10 +270,7 @@ ES PROJEKTAS
     max-width: 100%;
 }
 
-/*
-FOOTERIS
-*/
-
+/* FOOTER */
 .footer-row{
     background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
     background-size: cover;
@@ -322,10 +311,7 @@ footer ul{
     margin-right: auto;
 }
 
-/*
-COPYRIGHT
-*/
-
+/* COPYRIGHT */
 #copyright .container{
     background-color: #202020;
     padding-top: 1em;
@@ -342,9 +328,9 @@ COPYRIGHT
 }
 
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media screen and (min-width: 530px){
-    /* navbar */
+    /* NAVBAR */
     header{
         justify-content: space-between;
     }
@@ -354,7 +340,7 @@ COPYRIGHT
     #burger{
         margin-right: 1.2em;
     }
-    /* Landing */
+    /* LANDING */
     #main-heading-cta{
         padding: 1.4em 0 1.4em 0;
     }
@@ -374,9 +360,9 @@ COPYRIGHT
         font-size: 1.4em;
     }
 
-    /* Product info */
+    /* PRODUCT INFO */
 
-    /* Google maps */
+    /* GOOGLE MAPS */
     #section-4 .line{
         width: 45%;
         height: 0.5em;
@@ -387,7 +373,7 @@ COPYRIGHT
         height: 20em;
     }
 
-    /* EU project */
+    /* EU PROJECT */
     #es-text{
         max-width: 90%;
         padding-top: 4em;
@@ -406,7 +392,7 @@ COPYRIGHT
         padding-top: 1em;
     }    
 
-     /* Footer */
+     /* FOOTER */
      .footer-row{
          padding-left: 1em;
          padding-right: 1em;
@@ -428,10 +414,13 @@ COPYRIGHT
 
     @media screen and (min-width: 676px){
 
-        /* Header */
+        /* HEADER */
+        header{
+            display: flex;
+            width: 100%;
+        }
         .logo{
             padding-right: 9em;
-            float: left;
         }
         .overlay{
             width: 100% !important;
@@ -443,7 +432,7 @@ COPYRIGHT
         }
         .nav-links{
             display: inline-flex;
-            float: right;
+            justify-content: end;
         }
         .nav-links li{
             padding: 0.2em;
@@ -460,7 +449,8 @@ COPYRIGHT
         #burger, #closenav, .nav-links .line{
             display: none;
         }
-        /* Product info */
+
+        /* PRODUCT INFO */
 
         /* GMAPS */
         .map{
@@ -471,7 +461,7 @@ COPYRIGHT
     }
 
     @media screen and (min-width: 800px){
-        /* footer */
+        /* FOOTER */
         #footer-a, #footer-b, #footer-c{
             display: inline-table;
             max-width: 40%;

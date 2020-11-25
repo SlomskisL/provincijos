@@ -1,3 +1,4 @@
+
 // Functions to open/close navigation menu
 function openNav(){
     document.getElementById("nav").style.width = "100%";
