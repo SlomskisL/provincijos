@@ -10,20 +10,6 @@ function closeNav(){
     enableScrolling();
 }
 
-
-// Make navbar stay on top of site
-window.onscroll = function(){stickyMenu()};
-var header = document.getElementById("section-1");
-var sticky = header.offsetTop;
-
-function stickyMenu(){
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-}
-
 // Disable background scrolling when navmenu is open (gimped by scroll-behavior: smooth)
 function disableScrolling(){
   var x=window.scrollX;

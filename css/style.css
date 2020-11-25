@@ -48,7 +48,10 @@ ul,ol,li{
 /*
  Header and Nav
  */
-
+#section-1{
+    position: sticky;
+    z-index: 2;
+}
 header{
     background-color: #202020;
     display: flex;
@@ -56,12 +59,7 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 2;
-}
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
+    
 }
 
 .logo{
@@ -81,7 +79,7 @@ header{
     right: 0;
     top: 0;
     background-color:   rgba(32, 32, 32 , 0.97);
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.2s;
 }
 #closenav a{
