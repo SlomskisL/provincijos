@@ -5,9 +5,9 @@
 
 /* Core styles */
 body, html{
-    font-size: 1em;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5em;
+    line-height: 1.5rem;
     margin: 0;
     padding: 0;
     background-color: #E6E6E6;
@@ -27,12 +27,12 @@ h1,h2,h3,h4,h5,h6{
     color: #1f1f1f;
 }
 
-h1{ font-size:  1.7em; margin-top: 0;}
-h2{ font-size:  1.5em; margin-top: 0;}
-h3{ font-size:  1.4em; margin-top: 0;}
-h4{ font-size:  1.3em; }
-h5{ font-size:  1.2em; }
-h6{ font-size:  1.1em; margin: 0;}
+h1{ font-size:  1.7rem; margin-top: 0;}
+h2{ font-size:  1.5rem; margin-top: 0;}
+h3{ font-size:  1.4rem; margin-top: 0;}
+h4{ font-size:  1.3rem; }
+h5{ font-size:  1.2rem; }
+h6{ font-size:  1.1rem; margin: 0;}
 
 ul,ol,li{
     margin: 0;
@@ -67,7 +67,7 @@ header{
     position: relative;
 }
 .logo img{
-    margin: 1.5em 0 1.5em 0;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 .overlay{
@@ -84,9 +84,9 @@ header{
 }
 #closenav a{
     position: absolute;
-    right: 2em;
-    top: 1em;
-    font-size: 2em;
+    right: 2rem;
+    top: 1rem;
+    font-size: 2rem;
 }
 .nav-links{
     position: relative;
@@ -97,9 +97,9 @@ header{
 
 .nav-links a{
     display: block;
-    font-size: 2em;
-    line-height: 1.2em;
-    padding: 1em 0 1em 0;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    padding: 1rrem 0 1rem 0;
 }
 
 .nav-links a:hover,
@@ -110,15 +110,15 @@ header{
 
 .nav-links .line{
     width: 97%;
-    height: 0.2em;
+    height: 0.2rem;
     background-color: rgba(12, 12, 12, 0.2);
     margin: 0 auto;
-    border-radius: 5em;
+    border-radius: 5rem;
 }
 
 #burger{
     display: flex;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
@@ -130,26 +130,27 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 8em 0 2em 0;
+    padding: 8rem 0 2rem 0;
+    height: 100vh;
 }
 
 #main-heading-cta h1{
     color: #ffffff;
     max-width: 90%;
-    margin: 1em auto 0.5em auto;
-    font-size: 3em;
-    line-height: 1.4em;
+    margin: 1rem auto 0.5rem auto;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 #main-heading-cta h2{
     color: #ffffff;
     max-width: 90%;
-    margin: 1em auto;
-    font-size: 2em;
+    margin: 1rem auto;
+    font-size: 2rem;
 }
 #main-heading-cta p{
     color: #ffffff;
     max-width: 87%;
-    margin: 1.2em auto;
+    margin: 1.2rem auto;
     font-variant: small-caps;
     text-justify: distribute;
 }
@@ -158,50 +159,117 @@ header{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bolder;
-    margin: 2em;
+    margin: 2rem;
     display: inline-block;
     max-width: 90%;
-    padding: 1em 3em;
-    border-radius: 2em;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
 }
 
 .btn-big:hover{
     background-color: #e44e0d;
-    border-radius: 1em;
+    border-radius: 1rem;
     transition-duration: 0.3s;
-    padding-left: 4em;
-    padding-right: 4em;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 /* PRODUCT INFO */
 .title h2{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 2rem;
 }
 
 .title .line{
     width: 30%;
-    height: 0.3em;
+    height: 0.3rem;
     background-color: rgba(0, 0, 0, 0.20);
     margin: 0 auto;
-    border-radius: 0.4em;
+    border-radius: 0.4rem;
 }
 
 .title p{
     max-width: 90%;
-    margin: 2em auto 1em auto;
+    margin: 2rem auto 1rem auto;
     text-align: left;
 }
 
 /* IMAGE SLIDESHOW */
+.slideshow{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
 
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0; 
+    animation: cycleImages 41s infinite;
+}
+
+.slideshow-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 41s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+    animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+    animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+    animation-delay: 20s;
+}
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img{
+    animation-delay: 30s;
+}
+
+.slideshow-item-text{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(0,0,0,.6);
+    color: #ffffff;
+    padding: 0 1rem 0 1rem;
+}
+
+.slideshow-item-text h5{
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        transform: scale(1.3);
+    }
+}
 /* GOOGLE MAPS */
 #section-4 .container{
     background-color: #505050;
     
 }
 #section-4 h2{
-    padding-top: 2em;
+    padding-top: 2rem;
     color: #ffffff;
 }
 
@@ -209,19 +277,19 @@ header{
     background-color: rgba(322, 322, 322, 0.20);
 }
 .map-row{
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .map{
     text-align: center;
-    padding: 1em 0 2em 0;
+    padding: 1rem 0 2rem 0;
 }
 
 #gmap{
     border: 0;    
     width: 95%;
-    height: 20em;
-    margin: 2em auto 2em auto;
+    height: 20rem;
+    margin: 2rem auto 2rem auto;
 }
 
 .btn-small {
@@ -229,14 +297,14 @@ header{
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bolder;
-    padding: 1em  5em;
-    border-radius: 2em;
+    padding: 1rem  5rem;
+    border-radius: 2rem;
 }
 
 .btn-small:hover{
     background-color: #e44e0d;
-    border-radius: 1em;
-    padding: 1em 7em;
+    border-radius: 1rem;
+    padding: 1rem 7rem;
     transition-duration: 0.3s;
 }
 
@@ -245,11 +313,11 @@ header{
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3em;
+    padding-top: 3rem;
 }
 
 #es-text p{
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 .bold{
@@ -261,7 +329,7 @@ header{
 
 #es-img {
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 #es-img img{
@@ -275,8 +343,8 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding-bottom: 1.6em;
-    padding-top: 2.6em;
+    padding-bottom: 1.6rem;
+    padding-top: 2.6rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -284,12 +352,12 @@ header{
 footer h3{
     margin-right: auto;
     color: #ffffff;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 
 footer ul{
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 #footer-a{
@@ -312,8 +380,8 @@ footer ul{
 /* COPYRIGHT */
 #copyright .container{
     background-color: #202020;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     max-width: none;
 }
@@ -333,29 +401,29 @@ footer ul{
         justify-content: space-between;
     }
     .logo{
-        margin-left: 3em;
+        margin-left: 3rem;
     }
     #burger{
-        margin-right: 1.2em;
+        margin-right: 1.2rem;
     }
     /* LANDING */
     #main-heading-cta{
-        padding: 1.4em 0 1.4em 0;
+        padding: 1.4rem 0 1.4rem 0;
     }
     #main-heading-cta h1{
-        font-size: 3.4em;
-        margin-top: 3em;
+        font-size: 3.4rem;
+        margin-top: 3rem;
     }
     #main-heading-cta h2{
-        font-size: 2.4em;
+        font-size: 2.4rem;
     }
     #main-heading-cta p{
-        font-size: 1.4em;
-        margin-top: 5em;
-        margin-bottom: 3em;
+        font-size: 1.4rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
     }
     .btn-big{
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     /* PRODUCT INFO */
@@ -363,43 +431,43 @@ footer ul{
     /* GOOGLE MAPS */
     #section-4 .line{
         width: 45%;
-        height: 0.5em;
+        height: 0.5rem;
     }
 
     #gmap{
         width: 90%;
-        height: 20em;
+        height: 20rem;
     }
 
     /* EU PROJECT */
     #es-text{
         max-width: 90%;
-        padding-top: 4em;
+        padding-top: 4rem;
     }
 
     #es-text h3{
-        font-size: 1.8em;
-        line-height: 1.2em;
+        font-size: 1.8rem;
+        line-height: 1.2rem;
     }
 
     #es-text p{
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     #es-img{
-        padding-top: 1em;
+        padding-top: 1rem;
     }    
 
      /* FOOTER */
      .footer-row{
-         padding-left: 1em;
-         padding-right: 1em;
+         padding-left: 1rem;
+         padding-right: 1rem;
      }
      #footer-b, #footer-c{
         display: inline-table;
         max-width: 100%;
-        padding-left: 1.2em;
-        padding-right: 1.2em;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     #footer-c{
@@ -418,7 +486,7 @@ footer ul{
             width: 100%;
         }
         .logo{
-            padding-right: 9em;
+            padding-right: 9rem;
         }
         .overlay{
             width: 100% !important;
@@ -433,15 +501,15 @@ footer ul{
             justify-content: end;
         }
         .nav-links li{
-            padding: 0.2em;
+            padding: 0.2rem;
             display: inline;
         }
         .nav-links a{
-            font-size: 0.9em;
-            padding-left: 0.8em;
-            padding-right: 0.8em;
+            font-size: 0.9rem;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
             font-variant: small-caps;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.03rem;
         }
 
         #burger, #closenav, .nav-links .line{
