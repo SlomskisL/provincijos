@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <!-- basic -->
+    <!-- Basic -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- mobile metas -->
+    <!-- Mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- site metas -->
+    <!-- Site metas -->
     <title>Provincijos Mėsa</title>
     <meta name="keywords" content="">
     <meta name="description" content="Gero dūmo skonis">
     <meta name="author" content="Laurynas Slomskis">
 
-    <!-- stylesheets -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     
     <!-- JavaScript -->
@@ -25,84 +25,102 @@
 <body>
 
     <!-- 
-        Nav + header
+        Nav + Header
     -->
     <section id="section-1">
-            <header>
 
-                <div class="logo">
-                   <a href="#section-1"><img src="img\pmlogoMINI.png" alt="Provincijos Mesa"></a>
-                </div>
+        <!-- Header element -->
+        <header>
 
-                <!-- Navigation menu -->
-                <nav id="nav" class="overlay">
+            <!-- Logo image -->
+            <div class="logo">
+                <a href="#section-1"><img src="img\pmlogoMINI.png" alt="Provincijos Mesa"></a>
+            </div>
 
-                    <!-- button to close overlay -->
-                        <div id="closenav">
-                            <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">
-                            <i class="fas fa-times"></i></a>      
-                        </div>
+            <!-- Navigation menu -->
+            <nav id="nav" class="overlay">
 
-                    <!-- overlay content -->
-                        <ul class="nav-links" >
-                            <li>
-                                <div class="line"></div>
-                                <a href ="#section-2" onclick="closeNav()">Namai</a></li>
-                                <div class="line"></div>
-                                <li><a href ="#section-3" onclick="closeNav()">Apie Mus</a></li>
-                                <div class="line"></div>
-                                <li><a href ="#section-5" onclick="closeNav()">Kur mus rasti</a></li>
-                                <div class="line"></div>
-                                <li><a href ="#copyright" onclick="closeNav()">Susisiekite</a></li>
-                                <div class="line"></div>
-                        </ul><!-- End unordered list-->
-                </nav><!-- End navigation -->
+                <!-- button to close overlay -->
+                    <div id="closenav">
+                        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-times"></i></a>      
+                    </div>
+
+                <!-- Overlay content list -->
+                <ul class="nav-links" >
+                        <div class="line"></div>
+                        <li><a href ="#section-2" onclick="closeNav()">Namai</a></li>
+                        <div class="line"></div>
+                        <li><a href ="#section-3" onclick="closeNav()">Apie Mus</a></li>
+                        <div class="line"></div>
+                        <li><a href ="#section-5" onclick="closeNav()">Kur mus rasti</a></li>
+                        <div class="line"></div>
+                        <li><a href ="#copyright" onclick="closeNav()">Susisiekite</a></li>
+                        <div class="line"></div>
+                </ul><!-- End unordered list-->
+
+            </nav><!-- End navigation -->
                     
-                
+
                 <!-- Burger -->
                 <div id="burger">
                     <a href ="#!" onclick="openNav()">
                         <i class="fas fa-bars"></i>
                     </a>
-                </div>
+                </div> <!-- End Burger element -->
 
-            </header>
-    </section>
+        </header> <!-- End Header element-->
+
+    </section> <!-- End Nav + Header section -->
     
+
     <!-- 
         Landing 
     -->
     <section id="section-2">
+
+        <!-- Container element -->
         <div class="container">
+
+            <!-- Main landing and call to action -->
             <div id="main-heading-cta">
-                
-                <h1>Provincijos Mėsa</h1>
+                <h1>Provincijos Mėsa</h1> 
                 <h2>Gero Dūmo Skonis</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt modi non enim labore sit fugiat quaerat ut praesentium nulla.</p>
                 <a href="#section-4" class="btn-big">Kur mus rasti</a>
-            </div><!-- end main heading cta -->
-        </div><!-- end container -->
-    </section><!-- end section -->
+            </div><!-- End main heading cta -->
+
+        </div><!-- End container -->
+
+    </section><!-- End Landing section -->
+
 
     <!-- 
-        Product examples 
+        Product Examples 
     -->    
     <section id="section-3">
+
+        <!-- Container element -->
         <div class="container">
-            <div class="title">
-                <h2>Trumpai apie mus</h2>   <!-- Main heading-->
+
+            <!-- About section title and text -->
+            <div class="title" id="about-title">
+                <h2>Trumpai apie mus</h2>
                 <div class="line"></div>    <!-- Dividing line -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio nisi adipisci saepe quidem, vero error deleniti sunt pariatur voluptatibus reiciendis ex nemo voluptatem commodi inventore beatae dolorem voluptas dolor.</p>
-            </div>
-        </div> <!-- end container -->
-    </section> <!-- product examples -->
+            </div> <!-- End about section title and text-->
+
+        </div> <!-- End container -->
+
+    </section> <!-- End Product Examples section -->
+
 
     <!-- 
-        Image slideshow
+        Image Slideshow
      -->
-     <section class="section-4">
+     <section #="section-4">
 
-        <!-- container element -->
+        <!-- Container element -->
          <div class="container">
 
          <!-- Slideshow element -->
@@ -115,7 +133,7 @@
                         <h5>Asortimentas</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, impedit temporibus? Voluptatum repudiandae facilis exercitationem.</p>
                     </div>
-                </div> <!-- end slideshow item -->
+                </div> <!-- End slideshow item 1 -->
 
                 <!-- Slideshow item 2 -->
                 <div class="slideshow-item">
@@ -124,7 +142,7 @@
                         <h5>Desra</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, impedit temporibus? Voluptatum repudiandae facilis exercitationem.</p>
                     </div>
-                </div> <!-- end slideshow item -->
+                </div> <!-- End slideshow item 2 -->
 
                 <!-- Slideshow item 3 -->
                 <div class="slideshow-item">
@@ -133,7 +151,7 @@
                         <h5>Kumpis</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, impedit temporibus? Voluptatum repudiandae facilis exercitationem.</p>
                     </div>
-                </div> <!-- end slideshow item -->
+                </div> <!-- End slideshow item 3-->
 
                 <!-- Slideshow item 4 -->
                 <div class="slideshow-item">
@@ -142,27 +160,31 @@
                         <h5>Kibinai</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, impedit temporibus? Voluptatum repudiandae facilis exercitationem.</p>
                     </div>
-                </div> <!-- end slideshow item -->
+                </div> <!-- End slideshow item 4-->
 
-            </div> <!-- end slideshow element-->
+            </div> <!-- End slideshow element-->
 
-         </div> <!-- end container -->
+         </div> <!-- End container -->
 
-     </section> <!-- end section -->
+     </section> <!-- End Image Slideshow section -->
+
 
     <!-- 
         Google Maps
      -->
     <section id="section-5">
-        <div class="container"> <!-- main container -->
 
+        <!-- Container element -->
+        <div class="container">
+
+            <!-- Map section title -->
             <div class="title">
                 <h2>Kur mus rasti</h2>
                 <div class="line"></div>    <!-- dividing line -->
-            </div>
+            </div> <!-- End section title -->
             
-
-            <div class="map-row"> <!-- overall map container -->
+            <!-- Map element container -->
+            <div class="map-row">
 
                 <div class="map" id="map1">
                     <div class="iframe-rwd">
@@ -178,117 +200,154 @@
                         <a href="https://www.google.com/maps/dir//Marijampol%C4%97,+Lithuania/@54.5553727,23.2925755,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x46e0d186b069aae3:0x71b3f20f19b0c9a7!2m2!1d23.3626146!2d54.5553929" class="btn-small" target="_blank">Vykti</a>
                 </div>
 
-            </div><!-- end overall map container -->
-        </div><!-- end container -->
-    </section>
+            </div> <!-- End map element container -->
+
+        </div> <!-- End container -->
+
+    </section> <!-- End Google Maps section -->
+
 
     <!--
         EU Project info
     -->
     <section id="section-6">
+
+        <!-- Container Element -->
         <div class="container">
-            <div class="es-project"> <!-- EU project main  -->
-                <div id="es-text"> <!-- EU project text -->
+
+            <!-- EU project element -->
+            <div class="es-project">
+
+                <!-- EU project text elements -->
+                <div id="es-text">
                     <h3><span class="bold">UAB „Provincijos Mėsa“</span> įgyvendina iš dalies Europos sąjungos struktūrinių fondų lėšomis finansuojamą projektą <br> <span class="bold">„INOVATYVIŲ ĮRENGINIŲ DIEGIMAS UAB ,,Provincijos mėsa““</span> </h3>
-											<p>Projekto tikslas: įmonės gamybinių pajėgumų didinimas įsigyjant našią įrangą. </p>
-											<p>Projekto veiklos: naujų inovatyvių įrenginių įsigijimas ir įdiegimas. </p>
-											<p><span class="bold">UAB „Provincijos mėsa“</span> yra mėsos perdirbėja kuri nuo pat veiklos pradžios stengiasi gaminti pačios aukščiausios kokybės tradicinius šaltai rūkytus, sūdytus, vytintus ir kitus kiaulienos gaminius. </p>
-											<p>Įmonė atliko vidinę analizę, po kurios buvo nuspręsta įsigyti naujų įrengimų, tokiu būdu išplečiant gaminių asortimentą ir padidinant našumą. </p>
-											<p>Šis projektas vykdomas pagal 2014-2020 m. Europos Sąjungos fondu investicijų veiksmų programos 3 prioriteto „Smulkiojo ir vidutinio verslo konkurencingumo skatinimas“ priemonę Nr. 03.3.1-LVPA-K-850 <span class="bold">„Regio potencialas LT“</span>. </p>
-											<p>Priemonės tikslas: paskatinti mažas ir vidutines įmones ( MVĮ) skirti lėšų darbo efektyvumui ir įmonės pajėgumui pakelti. </p>
+
+					<p>Projekto tikslas: įmonės gamybinių pajėgumų didinimas įsigyjant našią įrangą. </p>
+					<p>Projekto veiklos: naujų inovatyvių įrenginių įsigijimas ir įdiegimas. </p>
+					<p><span class="bold">UAB „Provincijos mėsa“</span> yra mėsos perdirbėja kuri nuo pat veiklos pradžios stengiasi gaminti pačios aukščiausios kokybės tradicinius šaltai rūkytus, sūdytus, vytintus ir kitus kiaulienos gaminius. </p>
+					<p>Įmonė atliko vidinę analizę, po kurios buvo nuspręsta įsigyti naujų įrengimų, tokiu būdu išplečiant gaminių asortimentą ir padidinant našumą. </p>
+					<p>Šis projektas vykdomas pagal 2014-2020 m. Europos Sąjungos fondu investicijų veiksmų programos 3 prioriteto „Smulkiojo ir vidutinio verslo konkurencingumo skatinimas“ priemonę Nr. 03.3.1-LVPA-K-850 <span class="bold">„Regio potencialas LT“</span>. </p>
+					<p>Priemonės tikslas: paskatinti mažas ir vidutines įmones ( MVĮ) skirti lėšų darbo efektyvumui ir įmonės pajėgumui pakelti. </p>
 										
-											<span class="grey">
-											<p>Projekto biudžetas: 75 400,00 Eur; </p>
-											<p>Projekto finansavimas: 49 010,00 Eur. </p>
-											<p>Planuojama projekto veiklų pabaiga: 2020 metai. </p>
-                                            </span>
-                                            <!--
-                                                span bold: bold style in css
-                                                span grey: grey style in css
-                                            -->
+					<span class="grey">
+					<p>Projekto biudžetas: 75 400,00 Eur; </p>
+					<p>Projekto finansavimas: 49 010,00 Eur. </p>
+					<p>Planuojama projekto veiklų pabaiga: 2020 metai. </p>
+                    </span>
+                    <!--
+                        span bold: bold style in css
+                        span grey: grey style in css
+                    -->
                 </div><!-- end EU product text -->
+
+                <!-- EU project logo  -->
                 <div id="es-img">
                     <img src="img\eslogoMINI.png" alt="ES projekto logotipas">
                 </div>
-            </div> <!-- end EU project main -->
-        </div> <!-- end container -->
-    </section>
+
+            </div> <!-- End EU project element -->
+
+        </div> <!-- End container element -->
+
+    </section> <!-- End EU Project info section -->
+    
 
     <!--
         Footer
     -->
     <footer>
+
+        <!-- Container element -->
         <div class="container">
-            <!-- footer row -->
+
+
+            <!-- Footer element -->
             <div class="footer-row">
                 
-                <!-- footer shop list -->
+                <!-- Footer a sub-element -->
                 <div id="footer-a">
                     <h3>Kur rasti mūsų produkciją</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto modi quam totam quaerat placeat iure quisquam natus nisi eaque. Omnis.</p>
-                </div> <!-- end footer shop list -->
+                </div> <!-- End footer a sub-element -->
+                
+                <!-- Footer a and b grouped together for flex styling -->
+                <div class="footer-ab">
 
-                <!-- footer contacts -->
-                <div id="footer-b">
-                    <h3>Susisiekite</h3>
-                    <p>
-                        
-                        <span><i class="fas fa-map-marker-alt"></i>&emsp;E28 35, Gižai 70318</span>
-                    </p>
+                    <!-- Footer b sub-element -->
+                    <div id="footer-b">
+                        <h3>Susisiekite</h3>
+                        <p>
+                            
+                            <span><i class="fas fa-map-marker-alt"></i>&emsp;E28 35, Gižai 70318</span>
+                        </p>
 
-                    <p>
-                         
-                        <span><i class="fas fa-phone"></i>&emsp;+370 622 16595</span>
-                    </p>
+                        <p>
+                            
+                            <span><i class="fas fa-phone"></i>&emsp;+370 622 16595</span>
+                        </p>
 
-                    <p>
-                        
-                        <span><i class="fas fa-at"></i><a href="#">&emsp;susisiekimo@elpastas.lt</a></span>
-                    </p>
-                    <p>
-                        
-                        <span><i class="fab fa-facebook"></i><a href="https://www.facebook.com/Provincijos-m%C4%97sa-1171204949676699/" target="_blank">&emsp;Facebook</a></span>
-                    </p>
-                </div> <!-- end footer contacts -->
+                        <p>
+                            
+                            <span><i class="fas fa-at"></i><a href="#">&emsp;susisiekimo@elpastas.lt</a></span>
+                        </p>
+                        <p>
+                            
+                            <span><i class="fab fa-facebook"></i><a href="https://www.facebook.com/Provincijos-m%C4%97sa-1171204949676699/" target="_blank">&emsp;Facebook</a></span>
+                        </p>
 
-                <!-- footer opening hours -->
-                <div id="footer-c">
-                    <h3>Darbo valandos</h3>
-                    <ul>
-                        <li>
-                            <p>I - V<br>
-                                <span>08:00 - 19:00</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>VI<br>
-                                <span>08:00 - 15:00</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>VII<br>
-                                <span>09:00 - 15:00</span>
-                            </p>
-                        </li> <!-- end li -->
-                    </ul> <!-- end ul -->
-                </div> <!-- end footer opening hours -->
-            </div> <!-- end footer row -->
-         </div> <!-- end container -->
+                        <!-- 
+                            Fab fa-x uses fontawesome script to load logo elements 
+                        -->
 
-         
+                    </div> <!-- End footer b sub-element -->
 
-    </footer> <!-- end footer -->
+                    <!-- Footer c sub-element -->
+                    <div id="footer-c">
+                        <h3>Darbo valandos</h3>
+                        <ul>
+                            <li>
+                                <p>I - V<br>
+                                    <span>08:00 - 19:00</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>VI<br>
+                                    <span>08:00 - 15:00</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>VII<br>
+                                    <span>09:00 - 15:00</span>
+                                </p>
+                            </li> 
+                        </ul> 
+                    </div> <!-- End footer c sub-element -->
 
-<!-- copyright text -->
+                </div> <!-- End footer-ab element -->
+
+            </div> <!-- End footer element -->
+
+         </div> <!-- End container -->
+
+    </footer> <!-- End Footer -->
+
+
+<!-- 
+    Copyright 
+-->
 <div id="copyright">
+    <!-- Container element -->
     <div class="container">
+
         <div class="row">
             <h6>Autorinė teisė &copy; 2020 Provincijos Mėsa</h6>
         </div> <!-- end row -->
-    </div> <!-- end container -->
-</div> <!-- end copyright -->
 
-    
+    </div> <!-- End container -->
+
+</div> <!-- End Copyright div -->
+
 
 </body> <!-- end body -->
+
 </html> <!-- end html -->

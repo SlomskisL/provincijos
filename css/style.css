@@ -3,24 +3,22 @@
 /* Imported Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* Core styles */
+/* CORE STYLES */
 body, html{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5rem;
     margin: 0;
     padding: 0;
-    background-color: #E6E6E6;
+    background-color: #dfdfdf;
     box-sizing: border-box;
     position: auto;
     scroll-behavior:smooth; 
 }
-
 a{
     color: #ffffff;
     text-decoration: none;
 }
-
 h1,h2,h3,h4,h5,h6{
     letter-spacing: 0;
     position: relative;
@@ -39,15 +37,14 @@ ul,ol,li{
     padding: 0;
     list-style: none;
 }
-
 .container{
     margin-left: auto;
     margin-right: auto;
+    max-width: 1600px;
 }
 
-/*
- Header and Nav
- */
+
+/* HEADER AND NAVBAR */
 #section-1{
     position: sticky;
     z-index: 2;
@@ -59,9 +56,8 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
-    
+    height: 5rem;
 }
-
 .logo{
     overflow: hidden;
     position: relative;
@@ -69,7 +65,6 @@ header{
 .logo img{
     margin: 1.5rem 0 1.5rem 0;
 }
-
 .overlay{
     display: flex;
     height: 100%;
@@ -78,13 +73,13 @@ header{
     z-index: 1;
     right: 0;
     top: 0;
-    background-color:   rgba(32, 32, 32 , 0.97);
+    background-color:   rgba(32, 32, 32 , 0.992);
     overflow: hidden;
     transition: 0.2s;
 }
 #closenav a{
     position: absolute;
-    right: 2rem;
+    right: 2.4rem;
     top: 1rem;
     font-size: 2rem;
 }
@@ -94,33 +89,28 @@ header{
     width: 100%;
     text-align: center;
 }
-
 .nav-links a{
     display: block;
     font-size: 2rem;
     line-height: 1.2rem;
-    padding: 1rrem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }
-
 .nav-links a:hover,
 .nav-links a:focus{
     background-color: #505050;
     transition-duration: 0.2s;
 }
-
 .nav-links .line{
     width: 97%;
     height: 0.2rem;
-    background-color: rgba(12, 12, 12, 0.2);
+    background-color: rgba(12, 12, 12, 0.3);
     margin: 0 auto;
-    border-radius: 5rem;
+    border-radius: 9rem;
 }
-
 #burger{
     display: flex;
     font-size: 2rem;
 }
-
 
 
 /* LANDING */
@@ -131,9 +121,8 @@ header{
     background-size: cover;
     text-align: center;
     padding: 8rem 0 2rem 0;
-    height: 100vh;
+    height: 60vh;
 }
-
 #main-heading-cta h1{
     color: #ffffff;
     max-width: 90%;
@@ -152,7 +141,6 @@ header{
     max-width: 87%;
     margin: 1.2rem auto;
     font-variant: small-caps;
-    text-justify: distribute;
 }
 .btn-big{
     background-color: #e75b1e;
@@ -162,24 +150,26 @@ header{
     margin: 2rem;
     display: inline-block;
     max-width: 90%;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
 }
-
 .btn-big:hover{
-    background-color: #e44e0d;
-    border-radius: 1rem;
+    background-color: #ff4d00;
+    border-radius: 0.3rem;
     transition-duration: 0.3s;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
+
 /* PRODUCT INFO */
+#about-title{
+    background-color:  #E6E6E6;
+}
 .title h2{
     text-align: center;
     padding-top: 2rem;
 }
-
 .title .line{
     width: 30%;
     height: 0.3rem;
@@ -187,21 +177,21 @@ header{
     margin: 0 auto;
     border-radius: 0.4rem;
 }
-
 .title p{
     max-width: 90%;
-    margin: 2rem auto 1rem auto;
+    margin: 1rem auto 0 auto;
+    padding-bottom: 1rem;
     text-align: left;
 }
+
 
 /* IMAGE SLIDESHOW */
 .slideshow{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     position: relative;
     overflow: hidden;
 }
-
 .slideshow-item{
     width: inherit;
     height: inherit;
@@ -209,14 +199,31 @@ header{
     opacity: 0; 
     animation: cycleImages 41s infinite;
 }
-
 .slideshow-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     animation: zoom 41s infinite;
 }
+.slideshow-item-text{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(0,0,0,.8);
+    color: #ffffff;
+    padding: 0 1rem 0 1rem;
+}
+.slideshow-item-text h5{
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 2rem auto 1rem auto;
+    text-transform: uppercase;
+}
+.slideshow-item-text p{
+    max-width: 90%;
+}
 
+/* ANIMATIONS FOR SLIDESHOW */
 .slideshow-item:nth-child(1),
 .slideshow-item:nth-child(1) img{
     animation-delay: 0s;
@@ -234,64 +241,45 @@ header{
     animation-delay: 30s;
 }
 
-.slideshow-item-text{
-    width: 100%;
-    position: absolute;
-    bottom: 0%;
-    background-color: rgba(0,0,0,.6);
-    color: #ffffff;
-    padding: 0 1rem 0 1rem;
-}
-
-.slideshow-item-text h5{
-    color: #ffffff;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
 @keyframes cycleImages{
     25%{
         opacity: 1;
     }
-    40%{
+    60%{
         opacity: 0;
     }
 }
-
 @keyframes zoom{
     100%{
         transform: scale(1.3);
     }
 }
+
+
 /* GOOGLE MAPS */
-#section-4 .container{
+#section-5 .container{
     background-color: #505050;
-    
 }
-#section-4 h2{
+#section-5 h2{
     padding-top: 2rem;
     color: #ffffff;
 }
-
-#section-4 .line{
+#section-5 .line{
     background-color: rgba(322, 322, 322, 0.20);
 }
 .map-row{
     padding-bottom: 1rem;
 }
-
 .map{
     text-align: center;
-    padding: 1rem 0 2rem 0;
+    padding-bottom: 2rem;
 }
-
 #gmap{
     border: 0;    
     width: 95%;
     height: 20rem;
     margin: 2rem auto 2rem auto;
 }
-
 .btn-small {
     background-color: #e75b1e;
     color: #ffffff;
@@ -300,7 +288,6 @@ header{
     padding: 1rem  5rem;
     border-radius: 2rem;
 }
-
 .btn-small:hover{
     background-color: #e44e0d;
     border-radius: 1rem;
@@ -308,33 +295,34 @@ header{
     transition-duration: 0.3s;
 }
 
+
 /* EU PROJECT */
+.es-project{
+    background-color:  #E6E6E6;
+}
 #es-text {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 3rem;
 }
-
 #es-text p{
     line-height: 1.2rem;
 }
-
 .bold{
     font-weight: bold;
 }
 .grey{
     color: grey;
 }
-
 #es-img {
     text-align: center;
     padding-bottom: 2rem;
 }
-
 #es-img img{
     max-width: 100%;
 }
+
 
 /* FOOTER */
 .footer-row{
@@ -344,37 +332,26 @@ header{
     background-repeat: no-repeat;
     color: #ffffff;
     padding-bottom: 1.6rem;
-    padding-top: 2.6rem;
+    padding-top: 1.6rem;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
-
 footer h3{
     margin-right: auto;
     color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
-
-
-footer ul{
-    line-height: 1.2rem;
-}
-
-#footer-a{
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#footer-b{
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
+#footer-a,
+#footer-b,
 #footer-c{
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding-bottom: 1rem;
+}
+#footer-c ul{
+    line-height: 1.2rem;
 }
 
 /* COPYRIGHT */
@@ -396,6 +373,7 @@ footer ul{
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 530px){
+
     /* NAVBAR */
     header{
         justify-content: space-between;
@@ -404,18 +382,19 @@ footer ul{
         margin-left: 3rem;
     }
     #burger{
-        margin-right: 1.2rem;
+        margin-right: 3rem;
     }
+
+
+    /* OVERLAY */
+    .nav-links a{
+        line-height: 2rem;
+    }
+
+
     /* LANDING */
-    #main-heading-cta{
-        padding: 1.4rem 0 1.4rem 0;
-    }
     #main-heading-cta h1{
-        font-size: 3.4rem;
-        margin-top: 3rem;
-    }
-    #main-heading-cta h2{
-        font-size: 2.4rem;
+        margin-top: 2rem;
     }
     #main-heading-cta p{
         font-size: 1.4rem;
@@ -425,8 +404,7 @@ footer ul{
     .btn-big{
         font-size: 1.4rem;
     }
-
-    /* PRODUCT INFO */
+    
 
     /* GOOGLE MAPS */
     #section-4 .line{
@@ -434,107 +412,124 @@ footer ul{
         height: 0.5rem;
     }
 
-    #gmap{
-        width: 90%;
-        height: 20rem;
-    }
 
     /* EU PROJECT */
     #es-text{
         max-width: 90%;
-        padding-top: 4rem;
     }
-
     #es-text h3{
-        font-size: 1.8rem;
-        line-height: 1.2rem;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
     }
-
-    #es-text p{
-        font-size: 1.2rem;
-    }
-
     #es-img{
         padding-top: 1rem;
     }    
 
+    
      /* FOOTER */
-     .footer-row{
-         padding-left: 1rem;
-         padding-right: 1rem;
+     .footer-ab{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
      }
-     #footer-b, #footer-c{
-        display: inline-table;
-        max-width: 100%;
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
+}
+
+
+@media screen and (min-width: 680px){
+
+    /* HEADER */
+    header{
+        display: flex;
+        width: 100%;
+    }
+    .logo{
+        padding-right: 3rem;
+    }
+    .overlay{
+        width: 100% !important;
+        height: auto;
+        background-color: transparent;
+        position: relative;
+        margin-left: auto;
+        overflow-x: auto;
+    }
+    .nav-links{
+        display: inline-flex;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+    .nav-links li{
+        padding: 0.2rem;
+        display: inline;
+    }
+    .nav-links a{
+        font-size: 0.8rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        font-variant: small-caps;
+        letter-spacing: 0.03rem;
+    }
+    #burger, #closenav, .nav-links .line{
+        display: none;
     }
 
-    #footer-c{
-        float: right;
+
+    /* GOOGLE MAPS */
+    .map{
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+@media screen and (min-width: 780px){
+
+    /* FOOTER */
+    .footer-row{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #footer-a{
+        max-width: 30%;
+    }
+}
+
+    
+@media screen and (min-width: 1140px) {
+    /* NAVBAR */
+    .logo{
+        margin-left:3rem;
+    }
+    .nav-links{
+        margin-right: 2rem;
+    }
+    .nav-links a{
+        font-size: 1.2rem;
+        letter-spacing: 0.04rem;
     }
 
-    #footer-b h3, #footer-b p{
-        max-width: 100%;
+
+    /* GOOGLE MAPS */
+    .map-row{
+        display: flex;
+        justify-content: space-around;
     }
-
-    @media screen and (min-width: 676px){
-
-        /* HEADER */
-        header{
-            display: flex;
-            width: 100%;
-        }
-        .logo{
-            padding-right: 9rem;
-        }
-        .overlay{
-            width: 100% !important;
-            height: auto;
-            background-color: transparent;
-            position: relative;
-            margin-left: auto;
-            overflow-x: auto;
-        }
-        .nav-links{
-            display: inline-flex;
-            justify-content: end;
-        }
-        .nav-links li{
-            padding: 0.2rem;
-            display: inline;
-        }
-        .nav-links a{
-            font-size: 0.9rem;
-            padding-left: 0.8rem;
-            padding-right: 0.8rem;
-            font-variant: small-caps;
-            letter-spacing: 0.03rem;
-        }
-
-        #burger, #closenav, .nav-links .line{
-            display: none;
-        }
-
-        /* PRODUCT INFO */
-
-        /* GMAPS */
-        .map{
-            max-width: 80%;
-            margin-right: auto;
-            margin-left: auto;
-        }
+    .map{
+        width: 90%;
+        margin: 1rem;
     }
+}
 
-    @media screen and (min-width: 800px){
-        /* FOOTER */
-        #footer-a, #footer-b, #footer-c{
-            display: inline-table;
-            max-width: 40%;
-        }
+
+@media screen and (min-width: 1400px){
+    /* FOOTER */
+    .footer-row{
+        justify-content: space-between;
+        padding-left: 4rem;
+        padding-right: 4rem; 
     }
-
-    @media screen and (min-width: 1140px) {
-        
+    .footer-ab{
+        flex-grow: 0.8;
     }
 }
