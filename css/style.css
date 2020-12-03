@@ -48,12 +48,7 @@ ul,ol,li{
 }
 header{
     background-color: #202020;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
     justify-content: space-around;
     align-items: center;
     position: fixed;
@@ -68,10 +63,6 @@ header{
     margin: 1.5rem 0 1.5rem 0;
 }
 .overlay{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     height: 100%;
     width: 0%;
@@ -114,10 +105,6 @@ header{
     border-radius: 9rem;
 }
 #burger{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     font-size: 2rem;
 }
@@ -348,13 +335,7 @@ header{
     padding-top: 1.6rem;
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     
 }
@@ -449,15 +430,8 @@ footer h3{
     
      /* FOOTER */
      .footer-ab{
-        display: -webkit-box;
-        display: -moz-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -webkit-justify-content: space-between;
         justify-content: space-between;
      }
 }
@@ -467,10 +441,6 @@ footer h3{
 
     /* HEADER */
     header{
-        display: -webkit-box;
-        display: -moz-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
         width: 100%;
     }
@@ -478,7 +448,7 @@ footer h3{
         padding-right: 3rem;
     }
     .overlay{
-        width: 100% !important;
+        width: auto !important;
         height: auto;
         background-color: transparent;
         position: relative;
@@ -486,12 +456,7 @@ footer h3{
         overflow-x: auto;
     }
     .nav-links{
-        display: -webkit-inline-box;
-        display: -moz-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
         display: inline-flex;
-        -webkit-justify-content: end;
         justify-content: end;
         margin-right: 1rem;
     }
@@ -505,6 +470,7 @@ footer h3{
         padding-right: 0.8rem;
         font-variant: small-caps;
         letter-spacing: 0.03rem;
+        line-height: 1.3rem;
     }
     #burger, #closenav, .nav-links .line{
         display: none;
