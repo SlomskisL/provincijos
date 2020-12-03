@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/* Imported Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 /* CORE STYLES */
 body, html{
     font-size: 18px;
@@ -51,7 +48,12 @@ ul,ol,li{
 }
 header{
     background-color: #202020;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
     align-items: center;
     position: fixed;
@@ -66,6 +68,10 @@ header{
     margin: 1.5rem 0 1.5rem 0;
 }
 .overlay{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
     width: 0%;
@@ -108,6 +114,10 @@ header{
     border-radius: 9rem;
 }
 #burger{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     font-size: 2rem;
 }
@@ -121,7 +131,6 @@ header{
     background-size: cover;
     text-align: center;
     padding: 8rem 0 2rem 0;
-    height: 60vh;
 }
 #main-heading-cta h1{
     color: #ffffff;
@@ -152,6 +161,8 @@ header{
     max-width: 90%;
     padding: 1rem 2rem;
     border-radius: 2rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 .btn-big:hover{
     background-color: #ff4d00;
@@ -287,6 +298,8 @@ header{
     font-weight: bolder;
     padding: 1rem  5rem;
     border-radius: 2rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
 }
 .btn-small:hover{
     background-color: #e44e0d;
@@ -301,7 +314,7 @@ header{
     background-color:  #E6E6E6;
 }
 #es-text {
-    max-width: 95%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 3rem;
@@ -335,8 +348,15 @@ header{
     padding-top: 1.6rem;
     margin-left: auto;
     margin-right: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    
 }
 footer h3{
     margin-right: auto;
@@ -376,6 +396,7 @@ footer h3{
 
     /* NAVBAR */
     header{
+        -webkit-justify-content: space-between;
         justify-content: space-between;
     }
     .logo{
@@ -428,9 +449,16 @@ footer h3{
     
      /* FOOTER */
      .footer-ab{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
      }
 }
 
@@ -439,6 +467,10 @@ footer h3{
 
     /* HEADER */
     header{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
     }
@@ -454,7 +486,12 @@ footer h3{
         overflow-x: auto;
     }
     .nav-links{
+        display: -webkit-inline-box;
+        display: -moz-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
         display: inline-flex;
+        -webkit-justify-content: end;
         justify-content: end;
         margin-right: 1rem;
     }
@@ -487,7 +524,10 @@ footer h3{
 
     /* FOOTER */
     .footer-row{
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-justify-content: center;
         justify-content: center;
     }
     #footer-a{
@@ -512,7 +552,12 @@ footer h3{
 
     /* GOOGLE MAPS */
     .map-row{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-justify-content: space-around;
         justify-content: space-around;
     }
     .map{
@@ -525,11 +570,16 @@ footer h3{
 @media screen and (min-width: 1400px){
     /* FOOTER */
     .footer-row{
+        -webkit-justify-content: space-between;
         justify-content: space-between;
         padding-left: 4rem;
         padding-right: 4rem; 
     }
     .footer-ab{
+        -webkit-box-flex: 0.8;
+        -moz-box-flex: 0.8;
+        -webkit-flex-grow: 0.8;
+        -ms-flex: 0.8;
         flex-grow: 0.8;
     }
 }
