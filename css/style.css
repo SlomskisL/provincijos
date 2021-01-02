@@ -112,7 +112,7 @@ header{
 
 /* LANDING */
 #main-heading-cta{
-    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
+    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,7 +326,7 @@ header{
 
 /* FOOTER */
 .footer-row{
-    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.png);
+    background-image:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.87) 100%), url(../img/headerIMG.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
